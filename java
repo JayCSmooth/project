@@ -112,7 +112,7 @@ public class RosterProject
               {
                     if((studentID) == p.studentID)
                     {
-                          double avg = (p.testGrade1 + p.testGrade2 + p.testGrade3) / 3;
+                          float avg = (p.testGrade1 + p.testGrade2 + p.testGrade3) / 3;
                           System.out.println("StudentID # " + studentID + " has an average test grade of " + avg);
                           return;
                     }
