@@ -23,10 +23,10 @@ public class RosterProject
     
     public static class Student
 	{
-		    public int studentID;
+		    public String studentID;
 		    public String firstName;
 		    public String lastName;
-		    public String email;
+		    public String emailAddress;
 		    public int age;
 		    public int testGrade1;
 		    public int testGrade2;
