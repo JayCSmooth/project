@@ -21,7 +21,7 @@ public class RosterProject
         roster.add(new Student(5, "Jeremy", "Brown", "jbro332@wgu.edu", 27, new float[] {88, 92, 83}));
     }
     
-    private static class Student
+    public static class Student
 	{
 		    public int studentID;
 		    public String firstName;
