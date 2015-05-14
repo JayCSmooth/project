@@ -56,14 +56,14 @@ public class RosterProject
 			String studentID = getStudentID(project.studentID);
 			String firstName = getFirstName(project.firstName);
 			String lastName = getLastName(project.lastName);;
-			int age = getAge(project.age);
 			String emailAddress = getEmailAddress(project.emailAddress);
+			int age = getAge(project.age);
 			int testGrade1 = getTestGrade1(project.testGrade1);;
 			int testGrade2 = getTestGrade2(project.testGrade2);;
 			int testGrade3 = getTestGrade3(project.testGrade3);;
 			
 			System.out.println("Student ID: " + studentID + "\tFirst Name: " + firstName +"\tLast Name: "
-					+ lastName + "\tAge: " + age + "\tEmail Address: " + emailAddress + "\tTest Grades: {" + testGrade1 
+					+ lastName + "\tEmail Address: " + emailAddress + "\tAge: " + age + "\tTest Grades: {" + testGrade1 
 					 + ", " + testGrade2 + ", " + testGrade3 + "}");
 		}
 		
