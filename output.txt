@@ -1,0 +1,12 @@
+Student ID: 1	First Name: John	Last Name: Smith	Email Address: John1989@gmail.com Age: 20	Test Grades: {88, 79, 59}
+Student ID: 2	First Name: Suzan	Last Name: Erickson	Email Address: Erickson_1990@gmailcom Age: 19	Test Grades: {91, 72, 85}
+Student ID: 3	First Name: Jack	Last Name: Napoli	Email Address: The_lawyer99@yahoo.com	Age: 19 Test Grades: {85, 84, 87}
+Student ID: 4	First Name: Erin	Last Name: Black	Email Address: Erin.black@comcast.net	Age: 22 Test Grades: {91, 98, 82}
+Student ID: 5	First Name: Jeremy	Last Name: Brown	Email Address: jbro332@wgu.edu Age: 27 Test Grades: {88, 92, 84}
+Invalid email address for Student ID: 2	Email Address: Erickson_1990@gmailcom
+StudentID # 1 has an average test grade of 75.0
+StudentID # 2 has an average test grade of 82.0
+StudentID # 3 has an average test grade of 85.0
+StudentID # 4 has an average test grade of 90.0
+StudentID # 5 has an average test grade of 88.0
+The Student ID does not exist in the roster.
