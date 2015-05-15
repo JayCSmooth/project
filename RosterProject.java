@@ -5,24 +5,21 @@ public class RosterProject
 
   
 {
-    public class Roster {
-    public ArrayList<Student> roster = new ArrayList<Student>();
+    
    
 
     public void main(String args[])
     {
-        populateRoster();
+      
+        String [] students = {"1,John,Smith,John1989@gmail.com,20,88,79,59",
+				"2,Suzan,Erickson,Erickson_1990@gmailcom,19,91,72,85",
+				"3,Jack,Napoli,The_lawyer99@yahoo.com,19,85,84,87",
+				"4,Erin,Black,Erin.black@comcast.net,22,91,98,82",
+				"5,Jeremy,Brown,jbro332@wgu.edu,27,88,92,84"};
+        
+        
     }
     
-    public void populateRoster()
-    {
-        roster.add(new Student("1", "John", "Smith", "John1989@gmail.com", 20, 88, 79, 59));
-        roster.add(new Student("2", "Suzan", "Erickson", "Erickson_1990@gmailcom", 19, 91, 72, 85));
-        roster.add(new Student("3", "Jack", "Napoli", "The_lawyer99@yahoo.com", 19, 85, 84, 87));
-        roster.add(new Student("4", "Erin", "Black", "Erin.black@comcast.net", 22, 91, 98, 82));
-        roster.add(new Student("5", "Jeremy", "Brown", "jbro332@wgu.edu", 27, 88, 92, 84));
-    }
-  
     public class Student
     {
             public String studentID;
@@ -80,7 +77,28 @@ public class RosterProject
                      + ", " + testGrade2 + ", " + testGrade3 + "}");
         }
        
+    public class Roster 
+    {
+    public ArrayList<Student> roster = new ArrayList<Student>();
+    
+    public static void add(String studentID, String firstName, String lastName, String emailAddress, int age, int testGrade1, int testGrade2, int testGrade3)
+    {
+        String [] students = {studentId,firstName,lastName,emailAddress,age,testGrade1,testGrade2,testGrade3};
         
+        
+    }
+    public void populateRoster()
+    {
+        roster.add(new Student("1", "John", "Smith", "John1989@gmail.com", 20, 88, 79, 59));
+        roster.add(new Student("2", "Suzan", "Erickson", "Erickson_1990@gmailcom", 19, 91, 72, 85));
+        roster.add(new Student("3", "Jack", "Napoli", "The_lawyer99@yahoo.com", 19, 85, 84, 87));
+        roster.add(new Student("4", "Erin", "Black", "Erin.black@comcast.net", 22, 91, 98, 82));
+        roster.add(new Student("5", "Jeremy", "Brown", "jbro332@wgu.edu", 27, 88, 92, 84));
+        
+        Object[] Student = roster.toArray();
+
+    }
+  
         public int findID(String studentID)
         
     { 
@@ -92,7 +110,7 @@ public class RosterProject
         return -1;
     }
         
-        public void remove(String studentID)
+        public static void remove(String studentID)
     {
         if (findID(studentID) >= 0)
             roster.remove(findID(studentID));
@@ -100,13 +118,13 @@ public class RosterProject
             System.out.println("The Student ID does not exist in the roster.");
     }
     
-    public void print_all()
+    public static void print_all()
     {
         for (int i = 0; i < roster.size(); i++)
             roster.get(i).print();
     }
     
-    public void print_average_grade(String studentID)
+    public static void print_average_grade(String studentID)
         {
         for( Student p : roster)
               {
@@ -119,7 +137,7 @@ public class RosterProject
               }
               System.out.println("The Student ID does not exist in the roster.");
              }    
-        public void print_invalid_emails()
+        public static void print_invalid_emails()
             {
              
                   for(Student p : roster)
