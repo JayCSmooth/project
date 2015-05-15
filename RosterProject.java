@@ -21,17 +21,16 @@ public class RosterProject
                 populateRoster();
         }
         
-        public void populateRoster()
+        public static void populateRoster(String studentID, String firstName, String lastName, String emailAddress, int age, int testGrade1, int testGrade2, int testGrade3)
         {
-            roster.add(new Student("1", "John", "Smith", "John1989@gmail.com", 20, 88, 79, 59));
-            roster.add(new Student("2", "Suzan", "Erickson", "Erickson_1990@gmailcom", 19, 91, 72, 85));
-            roster.add(new Student("3", "Jack", "Napoli", "The_lawyer99@yahoo.com", 19, 85, 84, 87));
-            roster.add(new Student("4", "Erin", "Black", "Erin.black@comcast.net", 22, 91, 98, 82));
-            roster.add(new Student("5", "Jeremy", "Brown", "jbro332@wgu.edu", 27, 88, 92, 84));
+            roster.add("1", "John", "Smith", "John1989@gmail.com", 20, 88, 79, 59));
+            roster.add("2", "Suzan", "Erickson", "Erickson_1990@gmailcom", 19, 91, 72, 85));
+            roster.add("3", "Jack", "Napoli", "The_lawyer99@yahoo.com", 19, 85, 84, 87));
+            roster.add("4", "Erin", "Black", "Erin.black@comcast.net", 22, 91, 98, 82));
+            roster.add("5", "Jeremy", "Brown", "jbro332@wgu.edu", 27, 88, 92, 84));
         
-            public static void add(String studentID, String firstName, String lastName, String emailAddress, int age, int testGrade1, int testGrade2, int testGrade3)
-            
-                String [] students = {studentId,firstName,lastName,emailAddress,age,testGrade1,testGrade2,testGrade3};
+        
+        
             
         
     
