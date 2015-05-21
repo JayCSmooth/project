@@ -14,7 +14,7 @@ public class RosterProject
     
         public void main(String args[])
         {
-      
+            Roster roster = new Roster();
            
             new RosterProject();
             
