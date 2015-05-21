@@ -36,8 +36,8 @@ public class RosterProjectRedux
 		{
 			roster.print_average_grade(Integer.toString(i+1));
 		}
-		roster.remove(Integer.toString(7));		
-		
+		roster.remove("3");		
+		roster.remove("3");	
 
 		
 		
@@ -147,10 +147,10 @@ public class RosterProjectRedux
 		{
 			for( Student r : roster)
 			{
-				if(studentID==r.studentID)
+				if(Integer.parseInt(studentID)==Integer.parseInt(r.studentID))
 				{
 					float avg = (r.testGrade1 + r.testGrade2 + r.testGrade3) / 3;
-					System.out.println("StudentID # " + studentID + " has an average test grade of " + avg);
+					System.out.println("StudentID # " + studentID + " has an average test grade of " + avg + ".");
 					return;
 				}
 			}
@@ -165,7 +165,7 @@ public class RosterProjectRedux
 				if(r.emailAddress.indexOf('@') == -1 || r.emailAddress.indexOf('.') == -1)
 				{
 					System.out.println("Invalid email address for Student ID # " + r.studentID
-							+ "\tEmail Address: " + r.emailAddress);
+							+ "." + "\tEmail Address: " + r.emailAddress);
 					
 				}
 			}
