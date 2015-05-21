@@ -3,17 +3,18 @@ import java.util.ArrayList;
 import java.lang.*;
 public class RosterProject
 {
-     static String [] students = {"1,John,Smith,John1989@gmail.com,20,88,79,59",
-                "2,Suzan,Erickson,Erickson_1990@gmailcom,19,91,72,85",
-                "3,Jack,Napoli,The_lawyer99@yahoo.com,19,85,84,87",
-                "4,Erin,Black,Erin.black@comcast.net,22,91,98,82",
-                "5,Jeremy,Brown,jbro332@wgu.edu,27,88,92,84"};
                 
                 public static ArrayList<Student> roster = new ArrayList<Student>();
     
     
         public void main(String args[])
         {
+        	String [] students = {"1,John,Smith,John1989@gmail.com,20,88,79,59",
+                "2,Suzan,Erickson,Erickson_1990@gmailcom,19,91,72,85",
+                "3,Jack,Napoli,The_lawyer99@yahoo.com,19,85,84,87",
+                "4,Erin,Black,Erin.black@comcast.net,22,91,98,82",
+                "5,Jeremy,Brown,jbro332@wgu.edu,27,88,92,84"};
+                
             Roster roster = new Roster();
            
             new RosterProject();
