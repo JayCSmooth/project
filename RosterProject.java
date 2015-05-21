@@ -17,6 +17,8 @@ public class RosterProject
       
            
             new RosterProject();
+            
+            populateRoster();
         }
       
             public void RosterProject()
@@ -38,7 +40,14 @@ public class RosterProject
                     roster.add(x);
                 }
             }
-       
+       public static void populateRoster()
+		{      
+			roster.add(new Student("1", "John", "Smith", "John1989@gmail.com", 20, 88, 79, 59));
+        		roster.add(new Student("2", "Suzan", "Erickson", "Erickson_1990@gmailcom", 19, 91, 72, 85));
+        		roster.add(new Student("3", "Jack", "Napoli", "The_lawyer99@yahoo.com", 19, 85, 84, 87));
+        		roster.add(new Student("4", "Erin", "Black", "Erin.black@comcast.net", 22, 91, 98, 82));
+        		roster.add(new Student("5", "Jeremy", "Brown", "jbro332@wgu.edu", 27, 88, 92, 84));
+		}  
        
     
         public static class Student
