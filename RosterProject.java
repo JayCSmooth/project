@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.ArrayList;
 import java.lang.*;
 
-public class RosterProjectRedux 
+public class RosterProject 
 {
     public static void main(String[] args)
     {
